@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DyanmicComboController">
+   <children>
+      <ComboBox fx:id="cobUniversity" layoutX="30.0" layoutY="20.0" prefHeight="25.0" prefWidth="231.0" promptText="University" />
+      <ComboBox fx:id="cobYear" layoutX="30.0" layoutY="59.0" prefHeight="25.0" prefWidth="231.0" promptText="Year" />
+      <ComboBox fx:id="cobMajor" layoutX="34.0" layoutY="95.0" onAction="#processMajor" prefHeight="25.0" prefWidth="224.0" promptText="Major" />
+      <Label fx:id="lblUniveristy" layoutX="331.0" layoutY="22.0" prefHeight="21.0" prefWidth="255.0" text="UniversityName">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYear" layoutX="340.0" layoutY="61.0" prefHeight="21.0" prefWidth="178.0" text="Year">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMajor" layoutX="347.0" layoutY="97.0" prefHeight="21.0" prefWidth="224.0" text="Major">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cobNumber" layoutX="34.0" layoutY="144.0" prefWidth="150.0" promptText="No." />
+      <ComboBox fx:id="cobShortTownship" layoutX="34.0" layoutY="200.0" onAction="#processShortTownship" prefWidth="150.0" promptText="township short" />
+      <Label fx:id="lblNumber" layoutX="333.0" layoutY="148.0" prefHeight="17.0" prefWidth="90.0" text="Number" />
+      <Label fx:id="lblShortTownship" layoutX="333.0" layoutY="204.0" prefHeight="17.0" prefWidth="90.0" text="Short township" />
+      <Label fx:id="lblRegion" layoutX="333.0" layoutY="266.0" text="Region" />
+      <Label fx:id="lblLongTownship" layoutX="333.0" layoutY="330.0" text="Township" />
+      <ComboBox fx:id="cobRegion" layoutX="30.0" layoutY="262.0" prefWidth="150.0" promptText="Region" />
+      <ComboBox fx:id="cobLongTownship" layoutX="30.0" layoutY="326.0" onAction="#processLongTownship" prefWidth="150.0" promptText="Township" />
+   </children>
+</AnchorPane>
